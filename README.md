@@ -4,7 +4,6 @@
 ![效果图1](https://z3.ax1x.com/2021/08/17/f4v1Z8.jpg)  
 # Requirement
 ```
-Python>=3.6.0
 Pillow
 torch>=1.7.0
 torchvision>=0.8.0
@@ -14,6 +13,8 @@ opencv-python>=4.1.2
 PyYAML>=5.3.1
 scipy>=1.4.1
 tqdm>=4.41.0
+seaborn
+pycuda
 ```
 
 # Quick start
