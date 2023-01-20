@@ -113,7 +113,6 @@ nc: 2  # number of classes
 $ python train.py --epochs 200 --data custom_data.yaml --cfg yolov5s.yaml --weights yolov5s.pt --device 0
 ```
 - 在路徑下會生成runs文件夾裡面找到weights裡的best.pt就是訓練好的權重
-- 使用TensorRT加速訓練好的模型詳情請見官方教程[YoloV5_tesnorrt](https://github.com/wang-xinyu/tensorrtx/tree/master/yolov5)
 
 # Results
 - 檢測分類為person和hat分別代表沒戴安全帽和戴安全帽
