@@ -19,8 +19,8 @@ tqdm>=4.41.0
 # Quick start
 - 步骤一 : 配置好对应的环境并且克隆项目到本地
 ```
-$ git clone https://github.com/FanDady/Helmet-Detection-YoloV5.git
-$ cd Helmet-Detection-YoloV5
+$ git clone https://github.com/tomleee012/HelmetDetection.git
+$ cd HelmetDetection
 ```
 - 步骤二 ： 下载安全帽检测模型文件和安全帽TensorRT加速的engine文件并存放到相应位置  
 ```
@@ -30,7 +30,7 @@ $ 安全帽tensorRT文件百度网盘链接：https://pan.baidu.com/s/1olMmUR6T5
 $ 安全帽tensorRT文件提取码：ywfk
 $ 如果链接失效请邮件联系我或者在Issue下留言
 ```
-- 步骤三 ：在非TensorRT加速下YoloV5s推理
+- 步骤三 ：在TensorRT加速下YoloV5s推理
 ```
 $ cd helmet_yolov5
 $ python detect.py --source 0  # webcam
@@ -42,19 +42,6 @@ $ python detect.py --source 0  # webcam
                             http://112.50.243.8/PLTV/88888888/224/3221225900/1.m3u8  # http stream
 
 $ 例子：python detect.py --source test.jpg --weights helmet.pt
-```
-
-- 步骤四（可选）： 在TensorRT加速下进行YoloV5推理
-```
-$ cd helmet_tensorrt
-$ python3 yolov5_trt.py --source img
-                                 video
-                                 csiCam
-                                 usbCam
-$ 例子 : python3 yolov5_trt.py --source img --img_dir test.jpg --engine_dir helmet.engine
-        python3 yolov5_trt.py --source img --img_dir test.jpg --engine_dir helmet.engine
-        python3 yolov5_trt.py --source usbCam --engine_dir helmet.engine （默认调用dev 0摄像头）
-        python3 yolov5_trt.py --source csiCam --engine_dir helmet.engine （CSI摄像头参数根据自己实际去设置）
 ```
 
 # Helmet Dataset
