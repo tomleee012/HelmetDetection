@@ -1,4 +1,4 @@
-# Helmet-Detection-YoloV5
+# Helmet-Detection
 本項目主要基於YoloV5s-V5.0版本實現工地上安全帽佩戴的檢測，因此本項目的主要實現背景是在Jetson Nano上部署好安全帽佩戴檢測的代碼，當然，在Windows/Linux上同樣可以實現，並且本項目包含TensorRT加速使其能夠在邊緣硬件平台上能夠更快更實時的處理數據，再次**强調**本項目使用的YoloV5是屬於**YoloV5s**網絡是屬於模型最小的，並且版本是**V5.0**（各個版本不是很兼容各版本有點差別）
 
 ![效果圖1](https://z3.ax1x.com/2021/08/17/f4v1Z8.jpg)  
